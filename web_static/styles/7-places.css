@@ -1,0 +1,18 @@
+.places > article {
+    width: 390px;
+    border: 1px solid;
+    padding: 20px;
+    margin: 20px 2px 10px 0px;
+    border: 2px solid #ff5a5f;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    display: inline-block;
+}
+.places > article > h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
