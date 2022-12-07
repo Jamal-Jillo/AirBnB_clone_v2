@@ -223,5 +223,12 @@
         "updated_at": "2022-12-07T16:50:48.590289",
         "name": "Nevada",
         "__class__": "State"
+    },
+    "State.4bd347bb-d189-41cf-972b-b648774aadbf": {
+        "id": "4bd347bb-d189-41cf-972b-b648774aadbf",
+        "created_at": "2022-12-07T19:38:55.483859",
+        "updated_at": "2022-12-07T19:38:55.483871",
+        "name": "Nevada",
+        "__class__": "State"
     }
 }
