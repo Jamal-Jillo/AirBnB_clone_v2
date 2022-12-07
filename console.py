@@ -34,7 +34,6 @@ class HBNBCommand(cmd.Cmd):
         """Clear the console."""
         pass
 
-# ! Does not work
     def do_EOF(self, args):
         """Use 'CTRL + D' command to exit the program."""
         return True
@@ -47,21 +46,76 @@ class HBNBCommand(cmd.Cmd):
         """Empty line + ENTER shouldn’t execute anything."""
         pass
 
-    def do_create(self, arg):
+    def do_create(self, line):
         """Create a new instance of a BaseModel."""
+        # Functions of New codeBase
+        # Will update this function to allow object
+        # creation with given parameters
+        # param syntax:
+        # <class name> <param1 name>=<param1 value> <param2 name>=<param2
+        # value> ...
+        # Value syntax:
+        #  - string: "<value>" must be surrounded by double quotes
+        #   - any double quotes in the value must be escaped with a backslash
+        #   - all underscores must be replaced with spaces
+        # (e.g. "my_name" becomes "my name")
+        #  - integer: <value> must be an integer
+        #  - float: <unit>.<decimal> must be a float => contains a dot
+        # if any param doesn't follow the syntax or cant be recognized,
+        # it must be skipped
+
         try:
-            args = shlex.split(arg)
-            if len(args) == 0:
-                print("** class name missing **")
-                # return False
-            elif args[0] in classes:
-                print(eval(args[0])().id)
-                models.storage.save()
-                print("** Created successfully! **")
-            else:
-                print("** class doesn't exist **")
-        except Exception:
+            if not line:
+                raise SyntaxError()
+            my_list = line.split(" ")  # Split arguments
+            obj = eval("{}()".format(my_list[0]))
+            # New code
+            for index in range(1, len(my_list)):
+                param_val = self.valid_param(my_list[index])
+                # Validate parameter
+                if param_val:
+                    obj.__dict__[param_val[0]] = param_val[1]
+            # End new code
+            obj.save()
+            print("successfully created {} model"
+                  .format(obj.__class__.__name__))
+            print("{}".format(obj.id))
+        except SyntaxError:
+            print("** class name missing **")
+        except NameError:
             print("** class doesn't exist **")
+
+        # ? Previous codebase
+        # try:
+        #    args = shlex.split(arg)
+        #    if len(args) == 0:
+        #        print("** class name missing **")
+        #        # return False
+        #    elif args[0] in classes:
+        #        print(eval(args[0])().id)
+        #        models.storage.save()
+        #        print("** Created successfully! **")
+        #    else:
+        #        print("** class doesn't exist **")
+        # except Exception:
+        #    print("** class doesn't exist **")
+
+    # New code
+    def valid_param(self, arg):
+        """Validate parameter and returns either None or a tuple."""
+        if "=" not in arg:
+            print("** No value for parameter '{}' **".format(arg))
+            return None
+        args = arg.split("=")
+        param, value = args[0], args[1]
+        try:
+            value = eval(args[1])
+        except Exception:
+            return None
+        if type(value) is str:
+            value = value.replace("_", " ")
+        return (param, value)
+    # End new code
 
     def help_create(self):
         """Help for create command."""

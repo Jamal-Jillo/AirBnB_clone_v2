@@ -1,1 +1,220 @@
-{"BaseModel.4c493cd0-75a9-4a86-9eb5-26f267a26f31": {"id": "4c493cd0-75a9-4a86-9eb5-26f267a26f31", "created_at": "2022-10-27T01:50:34.616744", "updated_at": "2022-10-27T01:50:34.616864", "name": "My_First_Model", "my_number": 89, "email": "aibnb@mail.com", "first_name": "Betty", "__class__": "BaseModel"}, "BaseModel.61346ab9-3ad9-455c-9c7e-445b56b1d861": {"id": "61346ab9-3ad9-455c-9c7e-445b56b1d861", "created_at": "2022-10-28T00:04:41.054158", "updated_at": "2022-10-28T00:04:41.054158", "__class__": "BaseModel"}, "User.20ee490d-5dbb-4338-bef1-6fdf0cf23326": {"id": "20ee490d-5dbb-4338-bef1-6fdf0cf23326", "created_at": "2022-10-28T00:41:38.917033", "updated_at": "2022-10-28T00:41:38.917033", "email": "name@email", "__class__": "User"}, "Place.498e6c25-40c9-47ce-aa76-6a51f667dc06": {"id": "498e6c25-40c9-47ce-aa76-6a51f667dc06", "created_at": "2022-10-28T23:07:22.499633", "updated_at": "2022-10-28T23:07:22.499633", "__class__": "Place"}, "City.dbdce1e0-f735-41e5-adb2-49cab73076e8": {"id": "dbdce1e0-f735-41e5-adb2-49cab73076e8", "created_at": "2022-10-30T00:44:39.945041", "updated_at": "2022-10-30T00:44:39.945041", "__class__": "City"}, "Review.6d1d63df-3e25-47a0-ae68-f0fefb9edafb": {"id": "6d1d63df-3e25-47a0-ae68-f0fefb9edafb", "created_at": "2022-10-30T00:44:49.647597", "updated_at": "2022-10-30T00:44:49.647597", "email": "name@email.com", "__class__": "Review"}, "Review.65bdf94d-4cf2-4cbc-a2d4-501b26880c70": {"id": "65bdf94d-4cf2-4cbc-a2d4-501b26880c70", "created_at": "2022-10-30T00:44:52.007600", "updated_at": "2022-10-30T00:44:52.007600", "email": "review@email", "__class__": "Review"}, "BaseModel.782df958-77cb-498c-82a5-1bdca1b49e81": {"id": "782df958-77cb-498c-82a5-1bdca1b49e81", "created_at": "2022-10-31T08:49:59.641168", "updated_at": "2022-10-31T08:49:59.641168", "__class__": "BaseModel"}, "User.917e130f-29a6-4b95-8762-3fa9f0ce379d": {"id": "917e130f-29a6-4b95-8762-3fa9f0ce379d", "created_at": "2022-10-31T08:55:54.793402", "updated_at": "2022-10-31T08:55:54.793402", "__class__": "User"}, "User.f9902068-96d4-40ff-bcba-5d2d4adbbfe5": {"id": "f9902068-96d4-40ff-bcba-5d2d4adbbfe5", "created_at": "2022-10-31T09:04:10.724495", "updated_at": "2022-10-31T09:04:10.724495", "__class__": "User"}, "BaseModel.8a5ee0c4-cb55-4ef1-bdb5-7ed79c61252f": {"id": "8a5ee0c4-cb55-4ef1-bdb5-7ed79c61252f", "created_at": "2022-10-31T09:04:16.680724", "updated_at": "2022-10-31T09:04:16.680724", "__class__": "BaseModel"}, "BaseModel.1d842265-f620-4b81-a628-6b05c2bcfd80": {"id": "1d842265-f620-4b81-a628-6b05c2bcfd80", "created_at": "2022-10-31T09:08:31.585454", "updated_at": "2022-10-31T09:08:31.585454", "__class__": "BaseModel"}, "User.59b4373f-3292-4abd-96df-7c08e8ab82ed": {"id": "59b4373f-3292-4abd-96df-7c08e8ab82ed", "created_at": "2022-10-31T09:08:57.240662", "updated_at": "2022-10-31T09:08:57.240662", "__class__": "User"}, "User.8d099488-db50-478b-8d7a-0042f4413685": {"id": "8d099488-db50-478b-8d7a-0042f4413685", "created_at": "2022-10-31T09:14:00.489417", "updated_at": "2022-10-31T09:14:00.489417", "__class__": "User"}, "BaseModel.43559308-572e-4de7-bc32-bb0c86379752": {"id": "43559308-572e-4de7-bc32-bb0c86379752", "created_at": "2022-10-31T09:14:06.760880", "updated_at": "2022-10-31T09:14:06.760880", "__class__": "BaseModel"}}
+{
+    "User.b0580daa-e977-4968-bbbf-3cffff6c547c": {
+        "id": "b0580daa-e977-4968-bbbf-3cffff6c547c",
+        "created_at": "2022-12-07T11:39:20.703082",
+        "updated_at": "2022-12-07T11:39:20.703099",
+        "__class__": "User"
+    },
+    "User.7473a8a7-1b57-424d-b419-baf74e6efd45": {
+        "id": "7473a8a7-1b57-424d-b419-baf74e6efd45",
+        "created_at": "2022-12-07T11:40:22.567013",
+        "updated_at": "2022-12-07T11:40:22.567028",
+        "__class__": "User"
+    },
+    "City.692575ab-8df1-4029-a6f6-8bdb3cc91e21": {
+        "id": "692575ab-8df1-4029-a6f6-8bdb3cc91e21",
+        "created_at": "2022-12-07T11:43:26.997289",
+        "updated_at": "2022-12-07T11:43:26.997555",
+        "__class__": "City"
+    },
+    "User.aa243a22-afbc-4ab6-8a95-4b4ad2c90294": {
+        "id": "aa243a22-afbc-4ab6-8a95-4b4ad2c90294",
+        "created_at": "2022-12-07T11:43:42.437169",
+        "updated_at": "2022-12-07T11:43:42.437377",
+        "__class__": "User"
+    },
+    "User.d29671dd-1e34-4b82-ad1d-db2e93eb9f55": {
+        "id": "d29671dd-1e34-4b82-ad1d-db2e93eb9f55",
+        "created_at": "2022-12-07T12:20:05.433922",
+        "updated_at": "2022-12-07T12:20:05.433938",
+        "__class__": "User"
+    },
+    "User.b9738763-8160-4011-ac1b-34474515fec3": {
+        "id": "b9738763-8160-4011-ac1b-34474515fec3",
+        "created_at": "2022-12-07T12:23:35.839880",
+        "updated_at": "2022-12-07T12:23:35.839897",
+        "__class__": "User"
+    },
+    "User.62f0514c-7227-4694-80d7-58d62c597d6e": {
+        "id": "62f0514c-7227-4694-80d7-58d62c597d6e",
+        "created_at": "2022-12-07T12:24:08.111540",
+        "updated_at": "2022-12-07T12:24:08.111556",
+        "__class__": "User"
+    },
+    "User.07fda69d-62e3-453a-ab43-6b8236678274": {
+        "id": "07fda69d-62e3-453a-ab43-6b8236678274",
+        "created_at": "2022-12-07T12:32:12.042964",
+        "updated_at": "2022-12-07T12:32:12.043184",
+        "__class__": "User"
+    },
+    "User.00a688d3-e17f-43ae-8771-6fdddab98577": {
+        "id": "00a688d3-e17f-43ae-8771-6fdddab98577",
+        "created_at": "2022-12-07T12:37:14.105444",
+        "updated_at": "2022-12-07T12:37:14.105461",
+        "__class__": "User"
+    },
+    "Review.d00e74eb-d356-4e1f-86b1-43f6a54fb716": {
+        "id": "d00e74eb-d356-4e1f-86b1-43f6a54fb716",
+        "created_at": "2022-12-07T12:37:26.711952",
+        "updated_at": "2022-12-07T12:37:26.711964",
+        "__class__": "Review"
+    },
+    "User.77fc5076-c946-4f18-9ad5-6849f1e20083": {
+        "id": "77fc5076-c946-4f18-9ad5-6849f1e20083",
+        "created_at": "2022-12-07T12:46:18.105778",
+        "updated_at": "2022-12-07T12:46:18.127079",
+        "__class__": "User"
+    },
+    "User.be45bc13-9f92-4c51-9856-441c82d009e8": {
+        "id": "be45bc13-9f92-4c51-9856-441c82d009e8",
+        "created_at": "2022-12-07T12:55:37.846567",
+        "updated_at": "2022-12-07T12:55:37.846601",
+        "__class__": "User"
+    },
+    "User.91c65a9c-b719-4215-89d6-1d47f12de10d": {
+        "id": "91c65a9c-b719-4215-89d6-1d47f12de10d",
+        "created_at": "2022-12-07T12:55:48.622591",
+        "updated_at": "2022-12-07T12:55:48.622640",
+        "name": "Jamal",
+        "__class__": "User"
+    },
+    "Review.6aaab5ad-c4df-4268-ae6f-92e2b91e84bb": {
+        "id": "6aaab5ad-c4df-4268-ae6f-92e2b91e84bb",
+        "created_at": "2022-12-07T12:56:35.630188",
+        "updated_at": "2022-12-07T12:56:35.630240",
+        "Rating": "5 stars",
+        "__class__": "Review"
+    },
+    "User.8d2d7459-7d88-40a8-aa38-2805e72ecf0d": {
+        "id": "8d2d7459-7d88-40a8-aa38-2805e72ecf0d",
+        "created_at": "2022-12-07T13:01:08.525998",
+        "updated_at": "2022-12-07T13:01:08.526033",
+        "__class__": "User"
+    },
+    "City.f6bfb563-22f9-4465-8368-fa47926c1814": {
+        "id": "f6bfb563-22f9-4465-8368-fa47926c1814",
+        "created_at": "2022-12-07T13:08:27.663834",
+        "updated_at": "2022-12-07T13:08:27.663862",
+        "__class__": "City"
+    },
+    "City.3f11232a-3a93-47f6-b9ae-3d72bfa08d3c": {
+        "id": "3f11232a-3a93-47f6-b9ae-3d72bfa08d3c",
+        "created_at": "2022-12-07T13:09:20.351284",
+        "updated_at": "2022-12-07T13:09:20.351530",
+        "__class__": "City"
+    },
+    "User.0aad79f1-936f-49f1-89d8-413a0bf2eaba": {
+        "id": "0aad79f1-936f-49f1-89d8-413a0bf2eaba",
+        "created_at": "2022-12-07T13:10:44.126685",
+        "updated_at": "2022-12-07T13:10:44.126713",
+        "__class__": "User"
+    },
+    "City.0a7150d4-44bb-4467-ab92-ae5aea8a7a3f": {
+        "id": "0a7150d4-44bb-4467-ab92-ae5aea8a7a3f",
+        "created_at": "2022-12-07T13:11:09.166441",
+        "updated_at": "2022-12-07T13:11:09.166506",
+        "name": "Nairobi",
+        "__class__": "City"
+    },
+    "City.c07cf5e4-7880-493a-bd4f-4ddf983acd73": {
+        "id": "c07cf5e4-7880-493a-bd4f-4ddf983acd73",
+        "created_at": "2022-12-07T13:12:08.925828",
+        "updated_at": "2022-12-07T13:12:08.925878",
+        "name": "Nakuru",
+        "__class__": "City"
+    },
+    "Review.1dcfb14d-45e6-4bc7-a7e9-dee83b1a9f0d": {
+        "id": "1dcfb14d-45e6-4bc7-a7e9-dee83b1a9f0d",
+        "created_at": "2022-12-07T13:16:19.587732",
+        "updated_at": "2022-12-07T13:16:19.587788",
+        "name": "Good",
+        "__class__": "Review"
+    },
+    "State.1331b145-0e60-4f5b-9876-7677f0fa12aa": {
+        "id": "1331b145-0e60-4f5b-9876-7677f0fa12aa",
+        "created_at": "2022-12-07T13:17:30.935247",
+        "updated_at": "2022-12-07T13:17:30.935298",
+        "name": "California",
+        "__class__": "State"
+    },
+    "State.559fa8db-85bb-4607-b653-458aa70805fb": {
+        "id": "559fa8db-85bb-4607-b653-458aa70805fb",
+        "created_at": "2022-12-07T13:17:30.941507",
+        "updated_at": "2022-12-07T13:17:30.941551",
+        "name": "Arizona",
+        "__class__": "State"
+    },
+    "Place.2ba73599-2185-4f83-afd1-fa7cd3f4c77b": {
+        "id": "2ba73599-2185-4f83-afd1-fa7cd3f4c77b",
+        "created_at": "2022-12-07T13:17:30.949168",
+        "updated_at": "2022-12-07T13:17:30.958747",
+        "city_id": "0001",
+        "user_id": "0001",
+        "name": "My little house",
+        "number_rooms": 4,
+        "number_bathrooms": 2,
+        "max_guest": 10,
+        "price_by_night": 300,
+        "latitude": 37.773972,
+        "longitude": -122.431297,
+        "__class__": "Place"
+    },
+    "State.7cce5ffa-e903-426a-b88d-8ed8e418caf0": {
+        "id": "7cce5ffa-e903-426a-b88d-8ed8e418caf0",
+        "created_at": "2022-12-07T13:19:15.151097",
+        "updated_at": "2022-12-07T13:19:15.151143",
+        "name": "California",
+        "__class__": "State"
+    },
+    "State.2224ebba-edf3-4fef-8168-44661f923c9e": {
+        "id": "2224ebba-edf3-4fef-8168-44661f923c9e",
+        "created_at": "2022-12-07T13:19:15.159862",
+        "updated_at": "2022-12-07T13:19:15.159907",
+        "name": "Arizona",
+        "__class__": "State"
+    },
+    "Place.bb090440-cc48-4eb7-a01e-afca762ed8bf": {
+        "id": "bb090440-cc48-4eb7-a01e-afca762ed8bf",
+        "created_at": "2022-12-07T13:19:15.169034",
+        "updated_at": "2022-12-07T13:19:15.169181",
+        "city_id": "0001",
+        "user_id": "0001",
+        "name": "My little house",
+        "number_rooms": 4,
+        "number_bathrooms": 2,
+        "max_guest": 10,
+        "price_by_night": 300,
+        "latitude": 37.773972,
+        "longitude": -122.431297,
+        "__class__": "Place"
+    },
+    "State.65164868-2b1f-48e3-b263-60c4e8f7641a": {
+        "id": "65164868-2b1f-48e3-b263-60c4e8f7641a",
+        "created_at": "2022-12-07T13:20:17.286938",
+        "updated_at": "2022-12-07T13:20:17.286990",
+        "name": "California",
+        "__class__": "State"
+    },
+    "State.d511a396-6af1-4d84-9654-24a11855ebd4": {
+        "id": "d511a396-6af1-4d84-9654-24a11855ebd4",
+        "created_at": "2022-12-07T13:20:17.303436",
+        "updated_at": "2022-12-07T13:20:17.303579",
+        "name": "Arizona",
+        "__class__": "State"
+    },
+    "Place.b29e29ee-c3f5-4b86-b6bc-c58f6262d271": {
+        "id": "b29e29ee-c3f5-4b86-b6bc-c58f6262d271",
+        "created_at": "2022-12-07T13:20:17.317232",
+        "updated_at": "2022-12-07T13:20:17.317385",
+        "city_id": "0001",
+        "user_id": "0001",
+        "name": "My little house",
+        "number_rooms": 4,
+        "number_bathrooms": 2,
+        "max_guest": 10,
+        "price_by_night": 300,
+        "latitude": 37.773972,
+        "longitude": -122.431297,
+        "__class__": "Place"
+    }
+}
