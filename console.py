@@ -54,6 +54,7 @@ class HBNBCommand(cmd.Cmd):
         # param syntax:
         # <class name> <param1 name>=<param1 value> <param2 name>=<param2
         # value> ...
+        # create User name="jamal" age=25
         # Value syntax:
         #  - string: "<value>" must be surrounded by double quotes
         #   - any double quotes in the value must be escaped with a backslash

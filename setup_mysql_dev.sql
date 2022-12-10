@@ -2,7 +2,7 @@
 -- -creates a database hbnb_dev_db
 -- -creates a user hbnb_dev(in localhost with password hbnb_dev_pwd)
 -- -grants all privileges to hbnb_dev on hbnb_dev_db
--- -creates a database performace_schema
+-- a database performance_schema
 -- -hbnb_dev has SELECT privileges on performance_schema
 -- if the database hbnb_dev_db or the user hbnb_dev already exists, your script should not fail.
 

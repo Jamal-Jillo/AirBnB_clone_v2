@@ -5,8 +5,8 @@ from models.state import State
 from sqlalchemy import Column, String, ForeignKey
 from sqlalchemy.orm import relationship
 from os import getenv
-from models import storage
-from models.city import City
+# from models import storage
+# from models.city import City
 
 
 class City(BaseModel, Base):
