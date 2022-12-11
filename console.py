@@ -31,7 +31,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_quit(self, arg):
         """Quit command to exit the program"""
-        return True
+        return True  
 
     def _key_value_parser(self, args):
         """creates a dictionary from a list of strings"""
@@ -46,10 +46,10 @@ class HBNBCommand(cmd.Cmd):
                 else:
                     try:
                         value = int(value)
-                    except:
+                    except ValueError:
                         try:
                             value = float(value)
-                        except:
+                        except ValueError:
                             continue
                 new_dict[key] = value
         return new_dict
@@ -66,8 +66,15 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("** class doesn't exist **")
             return False
+        print("Saving...")
         print(instance.id)
         instance.save()
+        print("Saved")
+
+    def help_create(self):
+        """Help for create command."""
+        print("Create new instances of a class by using the <create> command\n\
+            >>> create <class name>")
 
     def do_show(self, arg):
         """Prints an instance as a string based on the class and id"""
@@ -79,6 +86,7 @@ class HBNBCommand(cmd.Cmd):
             if len(args) > 1:
                 key = args[0] + "." + args[1]
                 if key in models.storage.all():
+                    print("Here is the instance:")
                     print(models.storage.all()[key])
                 else:
                     print("** no instance found **")
@@ -86,6 +94,11 @@ class HBNBCommand(cmd.Cmd):
                 print("** instance id missing **")
         else:
             print("** class doesn't exist **")
+
+    def help_show(self):
+        """Help for show command."""
+        print("Prints an instance as a string based on the class and id\n\
+            >>> show <class name> <id>")
 
     def do_destroy(self, arg):
         """Deletes an instance based on the class and id"""
@@ -98,12 +111,18 @@ class HBNBCommand(cmd.Cmd):
                 if key in models.storage.all():
                     models.storage.all().pop(key)
                     models.storage.save()
+                    print("Instance deleted")
                 else:
                     print("** no instance found **")
             else:
                 print("** instance id missing **")
         else:
             print("** class doesn't exist **")
+
+    def help_destroy(self):
+        """Help for destroy command."""
+        print("Deletes an instance based on the class and id\n\
+            >>> destroy <class name> <id>")
 
     def do_all(self, arg):
         """Prints string representations of instances"""
@@ -121,6 +140,11 @@ class HBNBCommand(cmd.Cmd):
         print("[", end="")
         print(", ".join(obj_list), end="")
         print("]")
+
+    def help_all(self):
+        """Help for all command."""
+        print("Prints string representations of instances\n\
+            >>> all <class name>")
 
     def do_update(self, arg):
         """Update an instance based on the class name, id, attribute & value"""
@@ -140,15 +164,16 @@ class HBNBCommand(cmd.Cmd):
                                 if args[2] in integers:
                                     try:
                                         args[3] = int(args[3])
-                                    except:
+                                    except ValueError:
                                         args[3] = 0
                                 elif args[2] in floats:
                                     try:
                                         args[3] = float(args[3])
-                                    except:
+                                    except ValueError:
                                         args[3] = 0.0
                             setattr(models.storage.all()[k], args[2], args[3])
                             models.storage.all()[k].save()
+                            print("Instance updated")
                         else:
                             print("** value missing **")
                     else:
@@ -159,6 +184,13 @@ class HBNBCommand(cmd.Cmd):
                 print("** instance id missing **")
         else:
             print("** class doesn't exist **")
+
+    def help_update(self):
+        """Help for update command."""
+        print("Update an instance based on\n\
+            the class name, id, attribute & value\n\
+            >>> update <class name> <id> <attribute name> <attribute value>")
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
