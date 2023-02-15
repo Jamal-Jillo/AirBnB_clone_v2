@@ -6,6 +6,7 @@ from sqlalchemy import Column, String, ForeignKey
 from sqlalchemy.orm import relationship
 from os import getenv
 # from models import storage
+import models
 # from models.city import City
 
 
@@ -31,7 +32,7 @@ class City(BaseModel, Base):
             instances with state_id equals to the current State.id
             """
             cities = []
-            for city in storage.all(City).values():
+            for city in models.storage.all(City).values():
                 if city.state_id == self.id:
                     cities.append(city)
             return cities
