@@ -1,7 +1,9 @@
-#!/usr/bin/python3
-"""City Module for AirBnB project."""
+#!/usr/bin/python
+""" holds class City"""
+import models
 from models.base_model import BaseModel, Base
-from models.state import State
+from os import getenv
+import sqlalchemy
 from sqlalchemy import Column, String, ForeignKey
 from sqlalchemy.orm import relationship
 from os import getenv
@@ -11,28 +13,16 @@ import models
 
 
 class City(BaseModel, Base):
-    """City class that describes a city.
+    """Representation of city """
+    if models.storage_t == "db":
+        __tablename__ = 'cities'
+        state_id = Column(String(60), ForeignKey('states.id'), nullable=False)
+        name = Column(String(128), nullable=False)
+        places = relationship("Place", backref="cities")
+    else:
+        state_id = ""
+        name = ""
 
-    Attributes:
-        state_id (str): The state id. It will be the State.id
-        name (str): The city name
-        __tablename__ (str): The name of the MySQL table to store Cities
-    """
-
-    state_id = Column(String(60), ForeignKey('states.id'), nullable=False)
-    name = Column(String(128), nullable=False)
-    __tablename__ = 'cities'
-    cities = relationship('City', backref='state', cascade='all, delete')
-
-    if getenv('HBNB_TYPE_STORAGE') != 'db':
-        @property
-        def cities(self):
-            """Getter attribute cities that returns the list of City.
-
-            instances with state_id equals to the current State.id
-            """
-            cities = []
-            for city in models.storage.all(City).values():
-                if city.state_id == self.id:
-                    cities.append(city)
-            return cities
+    def __init__(self, *args, **kwargs):
+        """initializes city"""
+        super().__init__(*args, **kwargs)
